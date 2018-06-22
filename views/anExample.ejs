@@ -1,0 +1,64 @@
+<!-- /* Ziaul Choudhury(Zia) */ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>An Example</title>
+	<% include partials/library.ejs %>
+</head>
+<body>
+	<div class="header">
+		<h1>Python image data.</h1>
+		<p>
+			<q>If you would convince a man that he does wrong, do right. But do not care to convince him. Men will believe what they see. Let them see.</q><br> ― Henry David Thoreau
+		</p>
+	</div>
+
+	<% include partials/nav.ejs %>
+
+	<p id="middle-image"><img src="../images/an-example.jpg" alt="an-example" title="an-example"  width="90%"></p>
+
+	<h2>An Example Using Python!!!</h2>
+
+
+	<section class="column">
+		<p>
+			<span>I</span>n this example, I will try to demonstrate processing image data in Python IDE and find some analyticities from it. This demo was built and tested on Anaconda Navigator -> Spyder -> Python 3.x compilier. This code is also expeceted to run on any Python 3.x compilier with having instralled the modules needed to run this code accordnigly. Please note that the example is for demo purpose only, it doesn’t assure accuracy.
+		</p>
+
+		<p>
+			<span>S</span>o, our goal is to compare two satellite images of the same lactation provided by The United States Geological Survey(USGS). The first image given to us is the image that was before flooding and the second image was given to us is after flooding. Let’s name first as the 2015.png and second image as the 2016.png.
+		</p>
+
+
+		<p class="imgTitle"><img src="../images/2015.png" alt="2015" title="2015" width="90%"><br>2015.png</p>
+		<p class="imgTitle"><img src="../images/2016.png" alt="2016" title="2016" width="90%"><br>2016.png<p>
+
+
+			<p>
+				<span>N</span>ow, we’ll load both of those images using Python IDE for our analysis to find how much of the area has been flooded by excluding water and lakes shown in the first image. The code will basically turn all those green pixels in the first image (2015.png) into red and count how many pixels are in red or in other words assigning the red value to green pixels. Also, it is taking the blue value>.90 to measure the water. For the second image(2016.png) it assigning the green value which will also turn all the blue pixels into the red.
+			</p>
+
+
+			<p class="imgTitle"><img src="../images/result.png" alt="result" title="result" width="90%"><br>result.png</p>
+
+
+			<p>
+				<span>W</span>hat’s more… our reliance on data is becoming a more common factor in our lives. Any social media that we use is data. Most of the research that we do are based on data. The growth of the business can be based on data. Historical data is helping us look back in past and move forward to future. For example, the evaluation of the automobile, weather data, and etc.
+			</p>
+		</section>
+
+
+		<h2>Python Source Code <a href="https://github.com/zchy/Image-Data./blob/master/ImageProcessingDataScience.py" target="_blank"> Click Here</a>.</h2>
+
+		<div class="column">
+			<h2>The Results:</h2>
+			<p>Number of RED Pixels:  18198, Number of All Pixels:  639600<br>
+				Number of Blue Pixels:  3883, Number of All Pixels:  639600<br>
+				Percentage of river/lake 0.607098186366479%<br>
+				Percentage of water area after the flood including river/lake:  2.845215759849906%<br>
+				Actual percentage of land that were flooded 2.238117573483427%<br></p>
+			</div>
+
+			<% include partials/footer.ejs %>
+		</body>
+		</html>

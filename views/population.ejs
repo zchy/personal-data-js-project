@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Population | API</title>
+	<% include partials/library.ejs %>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	
+<!-- html	 -->
+</head>
+
+<body>
+	<div id=""column">
+		<div class="header">
+			<h1>NYC Subway Data.</h1>
+		</div>
+		<% include partials/nav.ejs %>
+		<h1>Historical and pridicted NYC population.</h1>
+
+		<!--  Calling the ajax  -->
+		<div class="ajax-container">
+			<div id="disp">
+				<table>
+					<h3>Population info & graph.</h3>
+					<div class="display-data"> </div>
+				</table>
+			</div>			
+		</div><br>
+
+		<div id="myDiv" style="width: auto; height: auto;"></div>
+	</div>
+
+	<% include partials/footer.ejs %>
+</body>
+<% include partials/nycppl.ejs %>
+
+
+</html>

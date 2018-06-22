@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Subway | API</title>
+<% include partials/library.ejs %>
+
+
+<!-- html	 -->
+</head>
+
+<body>
+	<div id=""column">
+		<div class="header">
+			<h1>NYC Subway Data.</h1>
+		</div>
+		 <% include partials/nav.ejs %>
+		<h1>DOIT NYC SUBWAY STATION.</h1>
+		<p>
+			The New York City Subway is a rapid transit system owned by the City of New York and leased to the New York City Transit Authority, a subsidiary agency of the state-run Metropolitan Transportation Authority(MTA).
+		</p>
+		<div class="partners">
+			<img id="my-image" class="center" src="../images/subwayMap.jpg" width="50%" />
+			<p style="text-align: center;">Click on the image to enlarge.</p>
+		</div>
+		<h2>Click the button to see the list of subways in NYC.</h2>
+		<!--  Calling the ajax  -->
+		<div class="ajax-container">
+			<input type="button" id="btn" value="Click me" />
+			<table>
+			  <div class="display-data"> </div>
+			</table>
+			
+		</div>
+	</div>
+	<% include partials/footer.ejs %>
+</body>
+<!-- adding additional js and css -->
+<% include partials/subway.ejs %>
+
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <% include partials/library.ejs %>
+</head>
+<body>
+<div class="header">
+  <h1>Contact.</h1>
+</div>
+
+<div class="container">
+    <% include partials/nav.ejs %>
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p>Drop a message.</p>
+  </div>
+    <!-- map -->
+      <div class="card"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96578.59475631562!2d-73.9174827!3d40.8481435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDUwJzQxLjMiTiA3M8KwNTEnNTMuMyJX!5e0!3m2!1sen!2sus!4v1529167038232" width=100% height=300px frameborder="0" style="border:0"></iframe></div>
+   <div class="card">
+    <!-- contact form -->
+<!--     <div class="column">
+      <form action="/POST">
+        <label for="unname">Name</label>
+        <input type="text" id="unname" name="unname" placeholder="Your name..">
+        <label for="lname">Email</label>
+        <input type="text" id="eamil" name="eamil" placeholder="Your eamil..">
+        <label for="subject">Comment</label>
+        <textarea id="comment" name="comment" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form> -->
+      <p>Phone: <em>347-XXX-XXXX</em></p>
+      <p>Email: <em>XXXXX999@gmail.com</em></p>
+      <h3>Follow Me</h3>
+      <p>
+        <a href="https://github.com/zchy" target="_blank"> <img src="images/Github.png" style='height: 5%; width: 5%;' alt="Github" title="Github"></a>&nbsp;
+
+        <a href="https://www.linkedin.com/in/ziaul-choudhury-14a092106" target="_blank" alt="Linkedin" title="Linkedin"> <img src="images/Linkedin.png" style='height: 5%; width: 5%; object-fit: contain'> </a>&nbsp;
+
+        <a href="https://cunyinternship-oaa-csm.symplicity.com/profiles/ziaul.choudhury" target="_blank" alt="CUNY symplicity" title="CUNY symplicity"> <img src="images/symc.png" style='height: 5%; width: 5%; object-fit: contain'> </a>&nbsp;
+      </p>
+    </div>
+
+  </div>
+  <% include partials/footer.ejs %>
+</body>
+</html>
