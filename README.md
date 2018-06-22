@@ -1,4 +1,4 @@
-# personal-data-js-projcet
+# personal-data-js-project
 
 ## Data is beautiful
 This is a web application that contains an hompage and multiple other informative pages for navigation. 
